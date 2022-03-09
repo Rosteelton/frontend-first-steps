@@ -1,0 +1,27 @@
+body {
+  margin: 10px;
+}
+#userPic {
+  width: 100px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 10px;
+}
+.sender {
+  font-weight: bold;
+}
+#treePic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+video {
+  width: 400px;
+}
+table,
+th,
+td {
+  border: 1px solid rgb(127, 76, 194);
+  border-collapse: collapse;
+  padding: 5px;
+}
