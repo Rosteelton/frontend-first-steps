@@ -20,6 +20,7 @@ video {
 }
 
 .countriesBox {
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   width: 300px;
