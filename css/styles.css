@@ -18,10 +18,39 @@ body {
 video {
   width: 400px;
 }
-table,
-th,
-td {
-  border: 1px solid rgb(127, 76, 194);
+
+.countriesBox {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 10px 10px 10px lightgrey;
+}
+
+.countries {
+  padding: 100px;
   border-collapse: collapse;
-  padding: 5px;
+  text-align: left;
+  align-self: center;
+}
+
+.countries th, td {
+  padding: 0.5rem;
+}
+
+.countries thead {
+  background-color: #427fef;
+  color: white;
+}
+.countries tbody tr:nth-child(odd) {
+  background-color: #eef7ff;
+  border-bottom: 1px solid hsla(219, 84%, 60%, 0.855);
+  border-top: 1px solid hsla(219, 84%, 60%, 0.855);
+}
+
+.countries tfoot {
+  background-color: #427fef;
+  font-weight: bold;
+  color: white;
 }

@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
-    <h1>Table example</h1>
-    <table>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+  <h1>Table example</h1>
+  <div class="countriesBox">
+    <table class="countries">
       <thead>
         <tr>
-          <th>Category</th>
-          <th>Sum</th>
+          <th>Country</th>
+          <th>OrderId</th>
+          <th>Order Amount</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Visa</td>
-          <td>100$</td>
+          <td>USA</td>
+          <td>1000</td>
+          <td>$1300</td>
         </tr>
         <tr>
-          <td>MasterCard</td>
-          <td>200$</td>
+          <td>USA</td>
+          <td>1001</td>
+          <td>$700</td>
+        </tr>
+        <tr>
+          <td>CA</td>
+          <td>1002</td>
+          <td>$2000</td>
+        </tr>
+        <tr>
+          <td>CA</td>
+          <td>1003</td>
+          <td>$1000</td>
         </tr>
       </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td></td>
+          <td>$5000</td>
+        </tr>
+      </tfoot>
     </table>
-    <p><a href="/index2.html">Go back</a></p>
-  </body>
+  </div>
+  <p><a href="/index2.html">Go back</a></p>
+</body>
 </html>
