@@ -36,7 +36,8 @@ video {
   align-self: center;
 }
 
-.countries th, td {
+.countries th,
+td {
   padding: 0.5rem;
 }
 
@@ -53,5 +54,22 @@ video {
 .countries tfoot {
   background-color: #427fef;
   font-weight: bold;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+.menu-item {
+  flex: auto;
+  list-style-type: none;
+}
+.menu-item a {
   color: white;
 }
