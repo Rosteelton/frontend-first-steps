@@ -1,14 +1,32 @@
 body {
   margin: 10px;
 }
-#userPic {
-  width: 100px;
-  border-radius: 50px;
-  float: left;
-  margin-right: 10px;
+
+.banner {
+  height: 100vh;
+  margin: 0px;
+  background: url(../images/space/background_w320.jpg) no-repeat;
+  background-size: cover;
 }
-.sender {
-  font-weight: bold;
+
+@media screen and (min-width: 853px) {
+  .banner {
+    background: url(../images/space/background_w853.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1228px) {
+  .banner {
+    background: url(../images/space/background_w1228.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .banner {
+    background: url(../images/space/background_w1440.jpg) no-repeat;
+    background-size: cover;
+  }
 }
 
 .countriesBox {
