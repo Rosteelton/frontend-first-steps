@@ -1,4 +1,4 @@
-body {
+.margin-body {
   margin: 10px;
 }
 
@@ -7,6 +7,26 @@ body {
   margin: 0px;
   background: url(../images/space/background_w320.jpg) no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+.banner h1 {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-shadow: 2px 2px black;
+
+}
+.banner p {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  
 }
 
 @media screen and (min-width: 853px) {
@@ -14,11 +34,24 @@ body {
     background: url(../images/space/background_w853.jpg) no-repeat;
     background-size: cover;
   }
+  .banner h1{
+    font-size: 3rem;
+  }
+  .banner p {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 1228px) {
   .banner {
     background: url(../images/space/background_w1228.jpg) no-repeat;
     background-size: cover;
+  }
+  .banner h1{
+    font-size: 4rem;
+    word-spacing: 1rem;
+  }
+  .banner p {
+    font-size: 1.5rem;
   }
 }
 
@@ -26,6 +59,12 @@ body {
   .banner {
     background: url(../images/space/background_w1440.jpg) no-repeat;
     background-size: cover;
+  }
+  .banner h1{
+    font-size: 5rem;
+  }
+  .banner p {
+    font-size: 2rem;
   }
 }
 
@@ -72,7 +111,7 @@ td {
   flex-direction: row;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  background-color: black;
+  background-color:#444;
   align-items: center;
   height: 40px;
   width: 60%;
