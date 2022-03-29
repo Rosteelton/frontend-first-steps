@@ -61,6 +61,24 @@ a {
 }
 
 .link-arrow:hover::after {
-    margin-left: 10px;
-    transition: 0;
+  margin-left: 10px;
+  transition: 0;
+}
+
+/* Badge */
+
+.badge {
+  color: white;
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+}
+
+.badge--card-1 {
+  background-color: #02cdf1;
+}
+
+.badge--card-2 {
+  background-color: #126de4;
 }
