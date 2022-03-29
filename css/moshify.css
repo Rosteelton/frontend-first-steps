@@ -1,14 +1,13 @@
+/* Colors */
 :root {
-  /* Colors */
   --color-primary: #00d9ff;
   --color-secondary: #2584ff;
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-text: #b1acbe;
-
-  /* Fonts */
 }
 
+/* Fonts */
 html {
   font-size: 62.5%;
 }
@@ -41,4 +40,27 @@ p {
   margin-top: 0;
   font-size: 2rem;
   color: var(--color-text);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+    transition: 0;
 }
