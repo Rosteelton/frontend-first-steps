@@ -6,7 +6,11 @@
   --color-heading: #1b0760;
   --color-text: #b1acbe;
 }
-
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 /* Fonts */
 html {
   font-size: 62.5%;
@@ -28,7 +32,7 @@ h3 {
 
 h1 {
   font-size: 8rem;
-  color: white;
+  /* color: white; */
 }
 h2 {
   font-size: 4rem;
@@ -110,6 +114,13 @@ a {
   height: 40px;
 }
 
+.icon--inline {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+  padding-right: 0.5rem;
+}
+
 .icon--primary {
   fill: var(--color-primary);
 }
@@ -121,4 +132,42 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 40px;
+  background: transparent;
+  border: 0;
+  padding: 2rem 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+
+.btn--fixed {
+  width: 100%;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: white;
+}
+
+.btn--card {
+  border: 2px solid var(--color-heading);
+  color: var(--color-heading);
+}
+
+.btn--card:hover {
+  background: var(--color-heading);
+  color: white;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: white;
 }
