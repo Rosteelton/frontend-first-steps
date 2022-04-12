@@ -5,6 +5,7 @@
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-text: #b1acbe;
+  --color-background: #232323;
 }
 *,
 *::after,
@@ -144,6 +145,11 @@ a {
   background-color: var(--color-accent);
 }
 
+.icon--collapsible {
+  align-self: center;
+  content: url(/images/icons/chevron.svg);
+}
+
 /* Buttons */
 .btn {
   background: transparent;
@@ -167,7 +173,6 @@ a {
   background: var(--color-accent);
   color: white;
 }
-
 
 .btn--card {
   border: 2px solid var(--color-heading);
@@ -377,7 +382,7 @@ a {
 }
 
 .callout__header {
-  color:white;
+  color: white;
 }
 
 .callout .btn {
@@ -388,4 +393,29 @@ a {
 
 .callout .grid {
   grid-template-columns: 1fr auto;
+}
+
+/* Collapsible */
+.collapsible {
+  background: var(--color-background);
+  padding: 2rem 2rem;
+}
+
+.collapsible__heading {
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible__header {
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.collapsible--colapsed .icon--collapsible {
+  transform: rotate(-90deg);
+}
+
+.collapsible--colapsed .collapsible__content {
+  display: none;
 }
