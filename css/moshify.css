@@ -419,3 +419,34 @@ a {
 .collapsible--colapsed .collapsible__content {
   display: none;
 }
+
+/* Blocks */
+
+.block {
+  margin:0;
+  padding: 5rem 5rem 15rem 5rem;
+}
+
+.block--black {
+  background: black;
+}
+
+.block--skewed-right {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.block--skewed-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  color: white;
+}
+
+.block__content {
+  color: var(--color-text);
+}
