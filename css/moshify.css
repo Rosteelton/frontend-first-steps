@@ -450,3 +450,26 @@ a {
 .block__content {
   color: var(--color-text);
 }
+
+
+/* Navigation bar */
+
+.nav {
+  padding:1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  background: black;
+}
+
+.nav__brand {
+  transform: translateY(10px);
+}
+
+.nav .list__item {
+  color: var(--color-text);
+  font-size: 1.5rem;
+}
+
+.nav .list__item:hover {
+  color: white;
+}
