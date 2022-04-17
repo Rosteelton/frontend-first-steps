@@ -29,6 +29,7 @@ h2,
 h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 h1 {
@@ -423,8 +424,7 @@ a {
 /* Blocks */
 
 .block {
-  margin:0;
-  padding: 5rem 5rem 15rem 5rem;
+  --pading-vertical: 6rem;
 }
 
 .block--black {
@@ -432,30 +432,32 @@ a {
 }
 
 .block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical)+20rem);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical)+20rem);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-}
-
-.block__header {
-  text-align: center;
 }
 
 .block__heading {
   color: white;
 }
 
-.block__content {
-  color: var(--color-text);
+.block__header {
+  align-self: center;
 }
 
+.block__content {
+  color: var(--color-text);
+  padding-bottom: 2rem;
+}
 
 /* Navigation bar */
 
 .nav {
-  padding:1rem 3rem;
+  padding: 0.5rem 0;
   display: flex;
   justify-content: space-between;
   background: black;
@@ -475,5 +477,16 @@ a {
   color: white;
 }
 .nav .list--inline {
-  margin:0;
+  margin: 0;
+}
+
+/* Hero */
+
+.hero {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.hero__pic {
+  width: 100%;
 }
