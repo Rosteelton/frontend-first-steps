@@ -445,10 +445,6 @@ a {
   color: white;
 }
 
-.block__header {
-  align-self: center;
-}
-
 .block__content {
   color: var(--color-text);
   padding-bottom: 2rem;
@@ -489,4 +485,8 @@ a {
 
 .hero__pic {
   width: 100%;
+}
+
+.hero__content {
+  align-self: center;
 }
