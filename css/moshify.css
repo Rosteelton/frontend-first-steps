@@ -459,10 +459,11 @@ a {
   display: flex;
   justify-content: space-between;
   background: black;
+  align-items: center;
 }
 
 .nav__brand {
-  transform: translateY(10px);
+  transform: translateY(5px);
 }
 
 .nav .list__item {
@@ -472,4 +473,7 @@ a {
 
 .nav .list__item:hover {
   color: white;
+}
+.nav .list--inline {
+  margin:0;
 }
