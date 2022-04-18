@@ -74,8 +74,7 @@ a {
   color: white;
   background-color: var(--color-primary);
   border-radius: 20px;
-  padding: 0.5rem 2rem;
-  font-weight: bold;
+  padding: 0 1.5rem;
 }
 
 .badge--card-1 {
@@ -189,6 +188,15 @@ a {
   background: var(--color-primary);
   color: white;
 }
+
+.btn .icon {
+  fill: white;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 
 /* Input */
 
@@ -450,6 +458,12 @@ a {
   padding-bottom: 2rem;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+
 /* Navigation bar */
 
 .nav {
@@ -490,3 +504,42 @@ a {
 .hero__content {
   align-self: center;
 }
+
+/* Domain */
+
+/* .domain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.badge--container {
+  display: flex;
+}
+
+.domain__header {
+  text-align: center;
+
+}
+
+.domain__header p {
+  max-width: 680px;
+  margin: 2rem auto;
+}
+
+.domain .input--group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border:0;
+  margin: 5rem auto;
+  max-width: 680px;
+}
+
+.domain--prices {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
