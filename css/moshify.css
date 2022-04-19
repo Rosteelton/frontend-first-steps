@@ -74,7 +74,8 @@ a {
   color: white;
   background-color: var(--color-primary);
   border-radius: 20px;
-  padding: 0 1.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
 }
 
 .badge--card-1 {
@@ -237,7 +238,7 @@ a {
 
 .card__header,
 .card__body {
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
 }
 
 .card--primary .card__header {
@@ -253,6 +254,11 @@ a {
 /* Plans */
 .plan {
   color: #fff;
+  transition: transform 0.3s;
+}
+
+.plan:hover {
+  transform: scale(1.1);
 }
 
 .plan__title {
@@ -268,7 +274,7 @@ a {
 
 .plan__period {
   opacity: 80%;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 .plan--popular .card__header {
@@ -286,11 +292,20 @@ a {
 
 .plan .list {
   margin-bottom: 6rem;
+  height: 190px;
 }
 
 .plan__description {
   display: block;
   padding-bottom: 2rem;
+}
+
+.plans {
+  padding: 10rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
 }
 
 /* Media */
@@ -537,6 +552,7 @@ a {
 .domain--prices {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2.5rem;
   font-weight: bold;
   font-size: 1.5rem;
