@@ -126,6 +126,11 @@ a {
 .icon--primary {
   fill: var(--color-primary);
 }
+
+.icon--secondary {
+  fill: var(--color-secondary);
+}
+
 .icon-container {
   background-color: #f3f9fa;
   border-radius: 100%;
@@ -448,6 +453,7 @@ a {
 
 .block {
   --pading-vertical: 6rem;
+  padding-bottom: var(--pading-vertical);
 }
 
 .block--black {
@@ -522,12 +528,6 @@ a {
 
 /* Domain */
 
-/* .domain {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
 .badge--container {
   display: flex;
 }
@@ -558,4 +558,16 @@ a {
   font-size: 1.5rem;
 }
 
+/* Features */
+.features__header {
+  text-align: center;
+}
 
+.feature__pic {
+  width: 100%;
+}
+
+.feature .grid {
+ align-items: center;
+ gap: 0rem 7rem;
+}
