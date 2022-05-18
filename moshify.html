@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/moshify.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -33,7 +34,7 @@
             </ul>
         </nav>
         <div class="grid grid--1x2">
-            <header class="hero__content">
+            <header class="hero__content" data-aos="fade-right">
                 <h1 class="block__heading">Cloud Hosting for Pros</h1>
                 <p class="block__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
                     tempore, ut
@@ -41,7 +42,7 @@
                     voluptas labore laudantium impedit maiores consequatur!</p>
                 <button class="btn btn--accent" type="submit">Get started</button>
             </header>
-            <img src="/images/banner.webp" srcset="/images/banner.webp 1x, /images/banner@2x.webp  2x" alt="">
+            <img src="/images/banner.webp" srcset="/images/banner.webp 1x, /images/banner@2x.webp  2x" alt="" data-aos="fade-up">
         </div>
     </section>
 
@@ -320,7 +321,7 @@
             <a href="#" class="btn btn--primary">get started</a>
         </div>
     </div>
-    
+
     <footer class="block footer hero">
         <container class="grid grid--1x5">
             <section class="footer__section">
@@ -330,52 +331,101 @@
             <section class="footer__section">
                 <h2 class="collapsible__header footer__heading">products</h2>
                 <ul class="list">
-                    <a href="#"><li class="list__item">WordPress Hosting</li></a>
-                    <a href="#"><li class="list__item">Free Automated WordPress</li></a>
-                    <a href="#"><li class="list__item">Migrations</li></a>
-                    <a href="#"><li class="list__item">Domain Names</li></a>
-                    <a href="#"><li class="list__item">Monthly Web Hosting</li></a>
+                    <a href="#">
+                        <li class="list__item">WordPress Hosting</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Free Automated WordPress</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Migrations</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Domain Names</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Monthly Web Hosting</li>
+                    </a>
                 </ul>
             </section>
             <section class="footer__section">
                 <h2 class="collapsible__header footer__heading">DOMAINS</h2>
                 <ul class="list">
                     </a>
-                    <a href="#"><li class="list__item">Domain Checker</li></a>
-                    <a href="#"><li class="list__item">Domain Transfer</li></a>
-                    <a href="#"><li class="list__item">Free Domain</li></a>
-                    <a href="#"><li class="list__item">XYZ Domain</li></a>
-                    <a href="#"><li class="list__item">Cheap SSL Certificate</li></a>
+                    <a href="#">
+                        <li class="list__item">Domain Checker</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Domain Transfer</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Free Domain</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">XYZ Domain</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Cheap SSL Certificate</li>
+                    </a>
                 </ul>
             </section>
             <section class="footer__section">
                 <h2 class="collapsible__header footer__heading">SUPPORT</h2>
                 <ul class="list">
-                    <a href="#"><li class="list__item">About</li></a>
-                    <a href="#"><li class="list__item">Affiliates</li></a>
-                    <a href="#"><li class="list__item">Blog</li></a>
-                    <a href="#"><li class="list__item">Careers</li></a>
-                    <a href="#"><li class="list__item">Community</li></a>
-                    <a href="#"><li class="list__item">News</li></a>
-                    <a href="#"><li class="list__item">Hosting</li></a>
+                    <a href="#">
+                        <li class="list__item">About</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Affiliates</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Blog</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Careers</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Community</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">News</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Hosting</li>
+                    </a>
                 </ul>
             </section>
             <section class="footer__section">
                 <h2 class="collapsible__header footer__heading">COMPANY</h2>
                 <ul class="list">
-                    <a href="#"><li class="list__item">Contact</li></a>
-                    <a href="#"><li class="list__item">Knowledge Base</li></a>
-                    <a href="#"><li class="list__item">Forums</li></a>
-                    <a href="#"><li class="list__item">System Status</li></a>
-                    <a href="#"><li class="list__item">Web Hosting</li></a>
-                    <a href="#"><li class="list__item">DreamCompute</li></a>
+                    <a href="#">
+                        <li class="list__item">Contact</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Knowledge Base</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Forums</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">System Status</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">Web Hosting</li>
+                    </a>
+                    <a href="#">
+                        <li class="list__item">DreamCompute</li>
+                    </a>
                 </ul>
             </section>
         </container>
     </footer>
 
 </body>
-
 <script src="/js/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
